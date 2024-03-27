@@ -1,0 +1,25 @@
+.hv-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic-bg(@url, @w, @h) {
+  width: @w;
+  height: @h;
+  background: @url no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/deep/ .viewer-title {
+  margin-bottom: 4px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/deep/ .viewer-content {
+  min-height: 200px;
+  border: 1px solid #333;
+  border-radius: 10px;
+}

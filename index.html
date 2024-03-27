@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>播客+++</title>
+    <script>
+	const baseSize = 100;
+
+	function setRem() {
+	    const clientWidth = document.documentElement.clientWidth;
+	    let scale = clientWidth / 1920;
+	    if (clientWidth <= 800) {
+		scale = clientWidth / 750;
+	    }
+	    document.documentElement.style.fontSize = (baseSize * Math.min(scale, 2)) + 'px'
+	}
+
+	setRem();
+	window.onresize = function () {
+	    setRem();
+	}
+    </script>
+</head>
+<body>
+<div id="app"></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
