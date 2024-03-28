@@ -11,7 +11,7 @@
 .podcast-wrapper {
     width: 260px;
     height: 100%;
-    background: #AAA;
+    background: #A4D6F1;
     border-radius: 5px;
 }
 </style>
