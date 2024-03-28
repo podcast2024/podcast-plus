@@ -6,6 +6,7 @@ import vue from '@vitejs/plugin-vue'
 import px2rem from 'postcss-px2rem'
 
 export default defineConfig({
+    // base:'./',
     base:'./',
     css: {
 	postcss: {
